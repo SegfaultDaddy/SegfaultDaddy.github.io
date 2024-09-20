@@ -1,0 +1,137 @@
+@charset "utf-8";
+
+body 
+{
+	background: #221F1F;
+	font-family: Roboto;
+}
+
+h1 
+{
+	text-align: center;
+	color: #FBF9F1;
+	margin: 0px;
+}
+
+p 
+{
+	color: #FBF9F1;
+	font-size: 20px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+	word-wrap: break-word;
+}
+
+@keyframes fadeIn 
+{
+	0% 
+	{
+		opacity: 0;
+		transform: scale(0.8);
+	}
+	100% 
+	{
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+@keyframes slideInLeft 
+{
+	0% 
+	{
+		transform: translateX(-100%);
+		opacity: 0;
+	}
+	100% 
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slideInRight 
+{
+	0% 
+	{
+		transform: translateX(100%);
+		opacity: 0;
+	}
+	100% 
+	{
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+.rectangle 
+{
+	width: 100%;
+	background: #4A4343;
+	font-size: 48;
+	margin: 0px;
+	clear: both;
+}
+
+.small-rectangle 
+{
+	width: 100%;
+	background: #4A4343;
+	height: 5px;
+	margin: 0px;
+	clear: both;
+}
+
+.custom-image-left 
+{
+	width: 40%;
+	float: left;
+	margin: 20px;
+	border-radius: 100px;
+	animation: slideInLeft 1s ease-in-out;
+	transition: transform 0.3s ease;
+}
+
+.custom-image-right
+{
+	width: 40%;
+	float: right;
+	margin: 20px;
+	border-radius: 100px;
+	animation: slideInRight 1s ease-in-out;
+	transition: transform 0.3s ease;
+}
+
+.custom-gif-left 
+{
+	width: 40%;
+	float: left;
+	margin: 20px;
+	border-radius: 100px;
+	animation: slideInLeft 1s ease-in-out;
+	transition: transform 0.3s ease;
+}
+
+.custom-gif-right 
+{
+	width: 50%;
+	float: right;
+	margin: 20px;
+	border-radius: 100px;
+	animation: slideInRight 1s ease-in-out;
+	transition: transform 0.3s ease;
+}
+
+.custom-image-left:hover,
+.custom-image-right:hover 
+{
+	transform: scale(1.1);
+}
+
+.custom-gif-left:hover,
+.custom-gif-right:hover 
+{
+	transform: scale(1.1);
+}
+
